@@ -1,0 +1,187 @@
+body{
+	background: #2579f7;
+    color: #fdd706; 
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+}
+
+
+h1{
+	font-size: 40px;
+	text-align: center;
+	
+}
+
+header{
+	height: 100px;
+	font-family: 'Yellowtail', cursive;
+}
+
+footer{
+	height: 80px;
+	background-color: #68a2fa;
+	border-top: 2px: white;
+	padding-top: 30px;
+	border-top-color:red;
+}
+
+nav li{
+	list-style-type: none;
+	float: left;
+	display:inline-block;	
+}
+
+nav ul{
+	margin : 0px;
+	padding: 0px;
+	list-style-type: none;	
+}
+
+nav {
+	width: 100%;
+	display: table;
+	margin:0 auto;
+	background-color: #68a2fa;
+}
+
+nav a{
+	padding: 20px 30px;
+	color: white;
+	font-size: 15px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.menu {
+	display: table;
+	margin:0 auto;
+}
+
+
+#bandeannonce{
+	height:500px;
+	width: 100%;
+	display: table-cell;
+        vertical-align: middle;	
+}
+
+.container {
+	margin:0px 10%;
+    padding: 15px 0;
+    height: 500px
+}
+
+.left{
+	
+	float: left;
+	width: 50%;
+	height: 100%
+}
+
+.right{
+
+	float: left;
+	width: 50%
+}	
+
+p{
+  color:black;
+  display:flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  text-align: justify;
+}
+
+h2 {
+	color:black;
+  display:flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+
+@keyframes animationtitre { 
+    0% {
+        transform: translateX(0px);
+        color:#fdd706;
+    }
+
+    50% {
+        transform: translateX(150px);
+        color:#f97fb6;
+    }
+
+    100% {
+        transform: translateX(150px) rotate(30deg);
+        color: #053686;
+    }
+}
+
+.logo {
+    animation:  animationtitre 2s;
+	animation-iteration-count: infinite;
+}
+
+#casting{
+	display:flex; 
+  	flex-wrap: wrap;
+  	justify-content: center;
+	}
+
+.content{
+  justify-content: right;
+  
+}
+
+.aside {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 1;
+  grid-row: 2;
+}
+.three {
+  grid-column: 2;
+  grid-row: 2 ;
+}
+.four {
+  grid-column: 3;
+  grid-row: 2;
+}
+.five {
+  grid-column: 4;
+  grid-row: 2;
+}
+.six {
+  grid-column: 5;
+  grid-row: 2;
+}
+
+
+@media all and (max-width: 1500px) {
+
+  nav
+    {
+        width: auto;
+        text-align: right;
+    }
+    
+
+    nav a
+    {
+        font-size: 3em;
+    }
+
+ 
+
+
+
